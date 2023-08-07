@@ -1,0 +1,63 @@
+/* Estilização do container principal da lista */
+.lista-container {
+    padding: 20px;
+    align-items: center;
+  }
+  
+  /* Estilização do container que vai conter os medicamentos lado a lado */
+  .medicamentos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    align-items: center;
+  }
+  
+  /* Estilização do medicamento individual (mesmo estilo do arquivo MedItem.css) */
+  .medicamento-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 280px;
+  }
+  
+  /* Estilização do container de pesquisa */
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilização do input de pesquisa */
+  .search-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  /* Estilização do botão de pesquisa (opcional) */
+  .search-container button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .medicamento-item {
+      width: 100%;
+      margin: 5px;
+    }
+  
+    .search-container {
+      width: 100%;
+    }
+  
+    .search-container input {
+      width: 80%;
+    }
+  }
+  

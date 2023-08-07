@@ -1,0 +1,95 @@
+/* Estilização gerais da página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilização do container principal da página */
+.container-Research {
+  width: 100%;
+  background-color: #f5f5f5;
+  animation: fadeIn 1s;
+}
+
+/* Estilização para efeito opaco na página */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Estilização do retângulo da pesquisa */
+.rectangle-Research {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centralizar horizontalmente */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.icon-Research {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.title-Research {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #605e5e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-Research-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centralizar horizontalmente */
+  justify-content: center; /* Centralizar verticalmente */
+  width: 100%;
+}
+
+.search-Research {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-Research-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 81%;
+}
+
+.search-Research-btn:hover {
+  background-color: #0056b3;
+}
+
+.medicamentos-container-pesq{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+@media screen and (max-width: 480px) {
+  .medicamentos-container-pesq {
+    flex-direction: column
+  }
+
+}

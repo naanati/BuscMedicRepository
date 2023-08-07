@@ -1,0 +1,72 @@
+/* Estilo para o container */
+.NavbarPerfil-container {
+    background-color: #0741ad; /* Cor azul */
+  }
+  
+  /* Estilo para a barra de navegação */
+  .NavbarPerfil-navbar {
+    background-color: #d2d9e7; /* Cor branca */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Estilo para o logo */
+  .NavbarPerfil-navbar-logo {
+    height: 40px;
+  }
+  
+  /* Estilo para o botão "Voltar" */
+  .NavbarPerfil-logout-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out; /* Transição suave de cor */
+  }
+  
+  /* Estilo para os botões na barra de navegação */
+  .NavbarPerfil-navbar-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilo para cada botão na barra de navegação */
+  .NavbarPerfil-navbar-buttons li {
+    list-style: none;
+    margin-left: 20px; /* Espaçamento entre os botões */
+  }
+  
+  /* Estilo para os links nos botões */
+  .NavbarPerfil-navbar-buttons li a {
+    text-decoration: none;
+    padding: 10px;
+    transition: all 400ms;
+    color: #0741ad; /* Cor azul */
+  }
+  
+  /* Estilo para os links quando passar o mouse sobre eles */
+  .NavbarPerfil-navbar-buttons li a:hover {
+    border-bottom: 5px solid #0741ad; /* Cor azul */
+  }
+  
+  /* Media query para ajustar o layout em telas menores */
+  @media (max-width: 768px) {
+    .NavbarPerfil-navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .NavbarPerfil-navbar-buttons {
+      margin-top: 20px;
+    }
+  
+    .NavbarPerfil-navbar-buttons li {
+      margin: 10px 0;
+    }
+  }
+  

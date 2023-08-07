@@ -1,0 +1,30 @@
+.result-container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+   
+  }
+  
+  .result-container h2 {
+    font-size: 1.5rem;
+    font-weight: 300px;
+    color: #605e5e;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .result-container div {
+    margin-bottom: 20px;
+  }
+  
+  .result-container p {
+    font-size: 1rem;
+    color: #605e5e;
+    margin: 5px 0;
+  }
+  
+ 

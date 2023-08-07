@@ -1,0 +1,44 @@
+
+/* Estilo para o container */
+.container-NavBar {
+  background-color: #0741ad; /* Cor azul */
+}
+
+/* Estilo para a barra de navegação */
+.navbar {
+  background-color: #d2d9e7; /* Cor branca */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo para o logo */
+.navbar-logo {
+  height: 40px;
+}
+
+/* Estilo para os botões na barra de navegação */
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para cada botão na barra de navegação */
+.navbar-buttons li {
+  list-style: none;
+}
+
+/* Estilo para os links nos botões */
+.navbar-buttons li a {
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px;
+  transition: all 400ms;
+  color: #0741ad; /* Cor branca */
+}
+
+/* Estilo para os links quando passar o mouse sobre eles */
+.navbar-buttons li a:hover {
+  border-bottom: 5px solid #ffffff; /* Cor branca */
+}

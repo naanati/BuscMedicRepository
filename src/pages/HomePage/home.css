@@ -1,0 +1,601 @@
+/* Estilização geral da página */
+.container-HomePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s;
+}
+
+/* Estilização para efeito opaco na página */
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+  }
+
+/* Estilização do topo da página com imagem de fundo */
+.background-container {
+  width: 100%;
+  height: 100vh;
+  height: 351px;
+  background: url("src/img/HOMEPAGE-PAGjpg.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-direction: column;
+}
+
+.cadastro-image {
+  max-width: 100%;
+  width: 300px;
+  height: 250px;
+  background-image: url("src/img/PESQMED.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden; 
+  transition: transform 0.3s ease; 
+}
+
+.cadastro-image:hover {
+  transform: translateY(50px); 
+}
+
+/* Estilização do conteúdo dentro do topo da página */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilização dos títulos do site */
+.site-name {
+  font-size: 5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.sub-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Estilização da seção de conteúdo principal */
+.main-content {
+  margin: 0;
+  text-align: center;
+  padding: 0 20px;
+  color: #605E5E;
+}
+
+/* Estilização dos títulos da página um */
+.page-one h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 30px;
+  color: #605E5E;
+}
+
+/* Estilização do texto da página um */
+.page-one p {
+  font-weight: 100px;
+  font-size: 1.2rem;
+}
+
+/* Estilização das estrelas de avaliação */
+.stars {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.spacing {
+  height: 80px;
+}
+
+/* Estilização do container dos retângulos de destaques */
+.rectangle-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Estilização dos retângulos de destaques */
+.rectangleCliente {
+  width: 300px;
+  color: #605E5E;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  overflow: hidden; 
+  transition: transform 0.3s ease; 
+}
+
+.rectangleCliente:hover {
+  transform: translateY(30px); 
+}
+
+.rectangle1 {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  margin: 0 20px;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #605E5E;
+  overflow: hidden; 
+  transition: transform 0.3s ease; 
+}
+
+.rectangle1:hover {
+  transform: translateY(30px); 
+}
+
+/* Estilização da seção de avaliação */
+.Avaliation {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rectangleCliente p {
+  font-size: 1.2rem;
+  color: #605E5E;
+}
+
+.new-content img {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  margin: 0 auto 20px;
+}
+
+.new-content h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #605E5E;
+}
+
+.new-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #605E5E;
+}
+
+.where-to-find {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Estilização responsiva */
+@media screen and (max-width: 768px) {
+  .background-container {
+    background-image: none; 
+  }
+  .page-one h2 {
+    font-size: 1.5rem;
+  }
+
+  .page-one p {
+    font-size: 1rem;
+  }
+
+  .rectangle1 {
+    width: 100%;
+    max-width: 300px;
+  }
+  .rectangle-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rectangleCliente {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .rectangle1 {
+    width: 100%;
+    max-width: 300px;
+  }
+  .stars {
+    margin: 0;
+  }
+
+  .spacing {
+    height: 40px;
+  }
+
+  .Avaliation {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  
+/* Estilização para a seção da página dois */
+.page-two {
+  padding: 20px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-two img {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+
+}
+
+.page-two h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #605E5E;
+  margin: 30px;
+}
+
+.rectanglePage2 {
+  padding: 20px;
+  background: #bbd9fa51;
+  color: #605E5E;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+   
+}
+
+/* Estilização do retângulo da página dois */
+.rectanglePage2 p {
+  font-size: 1.2rem;
+  color: #605E5E;
+  margin: 10px 0; 
+}
+
+/* Estilização do botão de "Junte-se a nós" */
+.cadastro-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 390px;
+  box-shadow: 0 5px 10px 0px #0A265A;
+  overflow: hidden; 
+  transition: transform 0.3s ease; 
+}
+
+.cadastro-button:hover {
+  transform: translateY(10px); 
+}
+
+/* Estilização responsiva */
+@media screen and (max-width: 768px) {
+  .page-two {
+    padding: 20px;
+  }
+
+  .page-two h2 {
+    font-size: 1.8rem;
+  }
+
+  .rectanglePage2 {
+    padding: 20px;
+    background-size: cover;
+  }
+
+  .cadastro-button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .rectanglePage2 {
+    padding: 20px;
+  }
+
+
+  .page-two img {
+    max-width: 80px;
+    height: 80px;
+    margin: 10px;
+  }
+}
+
+  
+ /* Estilização da seção da página três */
+.page-tree {
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: column; 
+}
+
+/* Estilização para o mapa do Google */
+iframe {
+  border: none;
+  width: 100%;
+  height: 300px; 
+  max-width: 100%;
+}
+
+/* Estilização para a seção de localização */
+.container-Localiza {
+  margin-top: 40px;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-Localiza h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #605E5E;
+}
+
+.localization-rectangle {
+  background: #007BFF;
+  color: #fff;
+  padding: 20px;
+  max-width: 100%; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.localization-rectangle p {
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+/* Estilização para a seção de pessoas do LinkedIn */
+.linkedin-rectangle {
+  display: flex;
+  justify-content: center;
+  max-width: 100%; 
+  width: 100%;
+  align-items: center;
+}
+
+.linkedin-person {
+  width: 150px; 
+  text-align: center;
+  margin: 10px; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.linkedin-person-image {
+  background-color: #ccc;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; 
+  transition: transform 0.3s ease; 
+}
+
+.linkedin-person-image:hover {
+  transform: translateY(10px); 
+}
+
+.linkedin-person p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.linkedin-person a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.linkedin-person a:hover {
+  text-decoration: underline;
+}
+
+/* Estilização responsiva */
+@media screen and (max-width: 768px) {
+  .container-Localiza h2 {
+    font-size: 2rem; 
+  }
+
+  .linkedin-person {
+    width: 120px; 
+  }
+  
+  .localization-rectangle p {
+    font-size: 1.2rem;
+  }
+  
+  .linkedin-person p {
+    font-size: 0.8rem;
+  }
+  
+  .linkedin-person a {
+   font-size: 0.8rem;
+  }
+  .linkedin-person-image {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+}
+  
+/* Estilos para a página de contato */
+
+.page-four {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #605E5E;
+  margin-bottom: 50px;
+}
+
+.contato-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ret-direito {
+  flex: 1;
+  max-width: 800px;
+  padding: 60px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px 0 0 5px;
+}
+
+.ret-esquerdo {
+  flex: 1;
+  max-width: 500px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 5px 5px 0;
+}
+
+.contato-form h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #605E5E;
+}
+
+.contato-form p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #605E5E;
+}
+
+.contato-form label {
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #605E5E;
+}
+
+.contato-form input,
+.contato-form textarea,
+.contato-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.contato-form textarea {
+  resize: vertical;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.enviar-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 5px 10px 0px #0A265A;
+  max-width: 390px;
+  align-items: center;
+}
+
+.contato-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Estilização responsiva */
+@media screen and (max-width: 768px) {
+  .contact-title {
+    font-size: 1.6rem;
+  }
+
+  .contato-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ret-esquerdo {
+    padding: 30px;
+  }
+
+  .contato-form h2 {
+    font-size: 2rem;
+  }
+
+  .enviar-button {
+    width: 100%;
+  }
+
+  .contato-form p {
+    font-size: 1rem;
+  }
+
+  .contato-form label {
+    font-size: 1rem;
+  }
+
+  .contato-form input,
+  .contato-form textarea,
+  .contato-form select {
+    font-size: 1rem;
+  }
+
+  .enviar-button {
+    font-size: 1rem;
+  }
+}
+
+  /* Estilização do radapé da página*/
+  .baseboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+  }
+  
+  .baseboard-image {
+    max-width: 300px; 
+    max-height: 100px; 
+    border-radius: 5px;
+  }
+

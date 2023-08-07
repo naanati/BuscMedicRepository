@@ -1,0 +1,62 @@
+/* Estilização do retângulo que contém os detalhes do medicamento */
+.medicamento-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    
+    
+  }
+  
+  /* Estilização dos elementos dentro do retângulo */
+  .medicamento-item p {
+    margin: 5px;
+    width: 100%;
+    
+  }
+  
+  /* Estilização dos botões Editar e Excluir */
+  .editarbtn {
+    background-color: #0063cb;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .excluirbtn{
+    background-color: rgb(154, 2, 2);
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  @media screen and (max-width: 768px) {
+    .medicamento-item {
+      width: 100%;
+      margin: 5px;
+    }
+  
+    .editarbtn,
+    .excluirbtn {
+      width: 100%;
+      padding: 8px 20px;
+    }
+  }
+  
+  

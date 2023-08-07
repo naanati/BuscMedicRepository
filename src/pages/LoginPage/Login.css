@@ -1,0 +1,215 @@
+/* Estilização do contêiner principal */
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fbfbfb;
+}
+
+/* Estilização do contêiner de conteúdo */
+.login-content-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  width: 80%;
+  height: 80%;
+  background-color: #0741AD;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  animation: fadeIn 1s;
+}
+
+/* Estilização para efeito opaco na página */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Estilização do contêiner */
+.retangulo-esquerdo {
+  width: 50%;
+  height: 100%;
+  background-color: #0741AD;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Estilização do título h2 no contêiner direito */
+.contato-image h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #fbfbfb;
+  font-weight: 300;
+  margin: -40px;
+}
+
+/* Estilização da imagem no contêiner esquerdo */
+.contato-image img {
+  max-width: 80%;
+  max-height: 80%;
+  margin: 40px;
+}
+
+/* Estilização do contêiner direito */
+.retangulo-direito {
+  font-family: 'Montserrat', sans-serif;
+  width: 50%;
+  height: 100%;
+  background-color: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0 10px 10px 0;
+}
+
+/* Estilização do título no contêiner direito */
+.acesso-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #605E5E;
+  margin: 20px;
+}
+
+/* Estilização da imagem no contêiner direito */
+.logo-image img {
+  max-width: 50%;
+  height: 50%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+
+/* Estilização do parágrafo no contêiner direito */
+.retangulo-direito p {
+  margin: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+/* Estilização do formulário de login */
+.login-form {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Estilização do input do formulário de login */
+.login-input {
+  text-align: left;
+  margin-bottom: 15px;
+  color: #605E5E;
+}
+
+/* Estilização do input do formulário */
+.login-input input {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilização do botão de login */
+.login-btn {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 8px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  margin: 10px;
+}
+
+/* Estilização do botão de voltar */
+.btn-volta {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 8px;
+  background-color: rgb(3, 50, 73);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  margin: 10px;
+}
+
+/* Estilização do link de registro */
+.register-link {
+  margin-top: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.register-link span {
+  margin-right: 5px;
+  color: #666666;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Estilização do link de registro  */
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Estilização do login google e facebook */
+.social-login p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.social-icons img {
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+/* Media queries responsiva */
+@media screen and (max-width: 768px) {
+  .login-content-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .retangulo-esquerdo,
+  .retangulo-direito {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .logo-image img {
+    max-width: 60px;
+    margin: 20px;
+  }
+}

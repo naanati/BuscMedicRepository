@@ -1,0 +1,80 @@
+  
+  .RegiMed-cadastro-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos dos campos de input e textarea */
+  .RegiMed-input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .RegiMed-input-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .RegiMed-input-container input,
+  .RegiMed-input-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Estilos dos botões */
+  .RegiMed-buttons-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .RegiMed-buttons-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .RegiMed-buttons-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos da lista de medicamentos */
+  .RegiMed-lista-medicamentos {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .RegiMed-medicamento-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .RegiMed-medicamento-item strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .RegiMed-medicamento-item span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .RegiMed-botoes-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  

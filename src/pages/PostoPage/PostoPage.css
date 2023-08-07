@@ -1,0 +1,136 @@
+/* Estilização gerais da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilização do retângulo principal da página */
+.profile-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.profile-box {
+    width: 90%;
+    max-width: 700px;
+    height: 500px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    animation: fadeIn 1s;
+}
+
+/* Estilização para efeito opaco na página */
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+h2 {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 30px;
+    color: #605e5e;
+}
+
+/* Estilização do conteiner de botões */
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilização dos botões */
+.button {
+    background-color: #ffffff;
+    color: #a09e9e;
+    border: 5px;
+    padding: 20px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button p {
+    font-size: 0.9rem;
+    color: solid #605e5e;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #adc2e8;
+    color: #fff;
+}
+
+/* Estilização do botão de sair */
+.bttn-sair {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 150px; /* Ajuste o tamanho do botão aqui */
+    height: 30px;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.bttn-sair:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries para tornar a página responsiva */
+@media screen and (max-width: 768px) {
+    .profile-box {
+        width: 90%;
+        max-width: 500px;
+        height: 490px;
+        padding-top: 30px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        width: 150px;
+        padding: 15px 5px;
+        margin-bottom: 8px;
+        font-size: 0.8rem;
+    }
+
+    .bttn-sair {
+        width: 120px;
+        height: 25px;
+        font-size: 0.7rem;
+        margin-top: 40px;
+    }
+}

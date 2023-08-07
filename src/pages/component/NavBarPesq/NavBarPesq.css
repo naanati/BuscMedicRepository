@@ -1,0 +1,71 @@
+/* Estilo para o container */
+.NavBarPesq-container {
+  background-color: #0741ad; /* Cor azul */
+}
+
+/* Estilo para a barra de navegação */
+.NavBarPesq-navbar {
+  background-color: #d2d9e7; /* Cor branca */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo para o logo */
+.NavBarPesq-navbar-logo {
+  height: 40px;
+}
+
+/* Estilo para o botão "Voltar" */
+.NavBarPesq-voltar-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out; /* Transição suave de cor */
+}
+
+/* Estilo para os botões na barra de navegação */
+.NavBarPesq-navbar-buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para cada botão na barra de navegação */
+.NavBarPesq-navbar-buttons li {
+  list-style: none;
+  margin-left: 20px; /* Espaçamento entre os botões */
+}
+
+/* Estilo para os links nos botões */
+.NavBarPesq-navbar-buttons li a {
+  text-decoration: none;
+  padding: 10px;
+  transition: all 400ms;
+  color: #0741ad; /* Cor azul */
+}
+
+/* Estilo para os links quando passar o mouse sobre eles */
+.NavBarPesq-navbar-buttons li a:hover {
+  border-bottom: 5px solid #0741ad; /* Cor azul */
+}
+
+/* Media query para ajustar o layout em telas menores */
+@media (max-width: 768px) {
+  .NavBarPesq-navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .NavBarPesq-navbar-buttons {
+    margin-top: 20px;
+  }
+
+  .NavBarPesq-navbar-buttons li {
+    margin: 10px 0;
+  }
+}

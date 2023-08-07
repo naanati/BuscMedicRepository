@@ -1,0 +1,80 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  /* Estilo para a página de perfil do usuário */
+  .profile-page {
+    max-width: 900px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza verticalmente */
+    padding: 20px;
+    min-height: 100vh; /* Garante que a página ocupe toda a altura da tela */
+    border-radius: 4px;
+  }
+  
+  .profile-page h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .construction-image {
+    width: 100%; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .construction-message {
+    text-align: center;
+    color: #ff0000; /* Vermelho */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out; /* Transição suave de cor */
+    
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos responsivos */
+  @media screen and (max-width: 768px) {
+    .profile-page {
+      padding: 10px;
+    }
+  
+    .construction-image {
+      width: 80%;
+    }
+  
+    /* Mostra o botão de voltar somente em telas maiores que 768px */
+    .back-button {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .profile-page {
+      padding: 5px;
+    }
+  
+    .construction-image {
+      width: 100%;
+    }
+  }
+  
